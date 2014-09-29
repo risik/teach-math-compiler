@@ -15,9 +15,9 @@ e : e '+' e     { printf("+ "); }
   ;
 %%
 
-int main() { 
-  int res = yyparse(); 
-  printf("\n");
+int main() {
+  int res = yyparse();
+  printf(" %s\n", res==0?"OK":"FAIL");
   return res;
 }
 
